@@ -1,0 +1,7 @@
+Planned Updates
+========================================================================
+1-Store the information about the person and the decision in a database
+2-Add another window that shows the database
+3-Add a help page and combine it with about
+4-Background check for security (such as social media accounts, criminal records, gun ownership and violent ideas).
+5-Lie detector 

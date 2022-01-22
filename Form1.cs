@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.IO;
 
 namespace project_zeta
 {
@@ -249,30 +250,65 @@ namespace project_zeta
         {
             //Set threshold to 200
             threshold_score = 200;
+
+            //Change the visual state
+            exactMatchToolStripMenuItem.Checked = true;
+            perfectMatchToolStripMenuItem.Checked = false;
+            stillPossibleToolStripMenuItem.Checked = false;
+            tossupToolStripMenuItem.Checked = false;
+            smallChanceToolStripMenuItem.Checked = false;
         }
 
         private void perfectMatchToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Set threshold to 160
             threshold_score = 160;
+
+            //Change the visual state
+            exactMatchToolStripMenuItem.Checked = false;
+            perfectMatchToolStripMenuItem.Checked = true;
+            stillPossibleToolStripMenuItem.Checked = false;
+            tossupToolStripMenuItem.Checked = false;
+            smallChanceToolStripMenuItem.Checked = false;
         }
 
         private void stillPossibleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Set threshold to 120
             threshold_score = 120;
+
+            //Change the visual state
+            exactMatchToolStripMenuItem.Checked = false;
+            perfectMatchToolStripMenuItem.Checked = false;
+            stillPossibleToolStripMenuItem.Checked = true;
+            tossupToolStripMenuItem.Checked = false;
+            smallChanceToolStripMenuItem.Checked = false;
         }
 
         private void tossupToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Set threshold to 100
             threshold_score = 100;
+
+            //Change the visual state
+            exactMatchToolStripMenuItem.Checked = false;
+            perfectMatchToolStripMenuItem.Checked = false;
+            stillPossibleToolStripMenuItem.Checked = false;
+            tossupToolStripMenuItem.Checked = true;
+            smallChanceToolStripMenuItem.Checked = false;
         }
 
         private void smallChanceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Set threshold to 25
             threshold_score = 25;
+
+            //Change the visual state
+            exactMatchToolStripMenuItem.Checked = false;
+            perfectMatchToolStripMenuItem.Checked = false;
+            stillPossibleToolStripMenuItem.Checked = false;
+            tossupToolStripMenuItem.Checked = false;
+            smallChanceToolStripMenuItem.Checked = true;
         }
 
         private void about_Click(object sender, EventArgs e)
@@ -280,6 +316,24 @@ namespace project_zeta
             //Show about box
             About about = new About();
             about.Show();
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+            //Let the user upload the picture of the date
+            OpenFileDialog fileOpen = new OpenFileDialog();
+            fileOpen.Title = "Open Image file";
+            fileOpen.Filter = "JPG Files (*.jpg)| *.jpg";
+
+            if (fileOpen.ShowDialog() == DialogResult.OK)
+            {
+                //Stretch the image
+                user_profile_pic.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                //Set the image
+                user_profile_pic.Image = Image.FromFile(fileOpen.FileName);
+            }
+            fileOpen.Dispose();
         }
     }
 }

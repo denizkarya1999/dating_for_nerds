@@ -125,13 +125,30 @@ namespace project_zeta
             this.irelligious = new System.Windows.Forms.RadioButton();
             this.check_eligibility_button = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.about = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.exactMatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.perfectMatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stillPossibleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tossupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.smallChanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.about = new System.Windows.Forms.ToolStripLabel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.religion = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.sexual_orientation = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.gender = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.ethnicity = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.TextBox();
+            this.pronouns = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.surname = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.user_profile_pic = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
@@ -189,6 +206,8 @@ namespace project_zeta
             this.alcohol_groupBox.SuspendLayout();
             this.religion_groupBox.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user_profile_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
@@ -249,7 +268,7 @@ namespace project_zeta
             this.personality_groupBox.Controls.Add(this.nerd_personality);
             this.personality_groupBox.Controls.Add(this.average_personality);
             this.personality_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.personality_groupBox.Location = new System.Drawing.Point(12, 37);
+            this.personality_groupBox.Location = new System.Drawing.Point(12, 156);
             this.personality_groupBox.Name = "personality_groupBox";
             this.personality_groupBox.Size = new System.Drawing.Size(125, 169);
             this.personality_groupBox.TabIndex = 1;
@@ -313,7 +332,7 @@ namespace project_zeta
             this.degree_groupBox.Controls.Add(this.average_university);
             this.degree_groupBox.Controls.Add(this.top_university);
             this.degree_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.degree_groupBox.Location = new System.Drawing.Point(143, 37);
+            this.degree_groupBox.Location = new System.Drawing.Point(143, 156);
             this.degree_groupBox.Name = "degree_groupBox";
             this.degree_groupBox.Size = new System.Drawing.Size(295, 169);
             this.degree_groupBox.TabIndex = 5;
@@ -387,7 +406,7 @@ namespace project_zeta
             this.family_member_groupBox.Controls.Add(this.college_grad);
             this.family_member_groupBox.Controls.Add(this.college_grad_with_stem_radioButton);
             this.family_member_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.family_member_groupBox.Location = new System.Drawing.Point(12, 212);
+            this.family_member_groupBox.Location = new System.Drawing.Point(12, 331);
             this.family_member_groupBox.Name = "family_member_groupBox";
             this.family_member_groupBox.Size = new System.Drawing.Size(295, 118);
             this.family_member_groupBox.TabIndex = 6;
@@ -437,7 +456,7 @@ namespace project_zeta
             this.have_car_groupbox.Controls.Add(this.has_car);
             this.have_car_groupbox.Cursor = System.Windows.Forms.Cursors.Default;
             this.have_car_groupbox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.have_car_groupbox.Location = new System.Drawing.Point(313, 212);
+            this.have_car_groupbox.Location = new System.Drawing.Point(313, 331);
             this.have_car_groupbox.Name = "have_car_groupbox";
             this.have_car_groupbox.Size = new System.Drawing.Size(125, 118);
             this.have_car_groupbox.TabIndex = 7;
@@ -475,7 +494,7 @@ namespace project_zeta
             this.talking_groupBox.Controls.Add(this.emotional_attraction);
             this.talking_groupBox.Controls.Add(this.common_interests);
             this.talking_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talking_groupBox.Location = new System.Drawing.Point(12, 336);
+            this.talking_groupBox.Location = new System.Drawing.Point(12, 455);
             this.talking_groupBox.Name = "talking_groupBox";
             this.talking_groupBox.Size = new System.Drawing.Size(248, 116);
             this.talking_groupBox.TabIndex = 7;
@@ -525,7 +544,7 @@ namespace project_zeta
             this.response_groupBox.Controls.Add(this.slow_down);
             this.response_groupBox.Controls.Add(this.stable);
             this.response_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.response_groupBox.Location = new System.Drawing.Point(266, 336);
+            this.response_groupBox.Location = new System.Drawing.Point(266, 455);
             this.response_groupBox.Name = "response_groupBox";
             this.response_groupBox.Size = new System.Drawing.Size(172, 116);
             this.response_groupBox.TabIndex = 8;
@@ -576,7 +595,7 @@ namespace project_zeta
             this.interest_match_groupBox.Controls.Add(this.certain_interests);
             this.interest_match_groupBox.Controls.Add(this.almost_all_of_them);
             this.interest_match_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.interest_match_groupBox.Location = new System.Drawing.Point(12, 458);
+            this.interest_match_groupBox.Location = new System.Drawing.Point(12, 577);
             this.interest_match_groupBox.Name = "interest_match_groupBox";
             this.interest_match_groupBox.Size = new System.Drawing.Size(172, 146);
             this.interest_match_groupBox.TabIndex = 9;
@@ -638,7 +657,7 @@ namespace project_zeta
             this.physical_attraction_groupBox.Controls.Add(this.somewhat_attractive);
             this.physical_attraction_groupBox.Controls.Add(this.very_attractive);
             this.physical_attraction_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.physical_attraction_groupBox.Location = new System.Drawing.Point(193, 458);
+            this.physical_attraction_groupBox.Location = new System.Drawing.Point(193, 577);
             this.physical_attraction_groupBox.Name = "physical_attraction_groupBox";
             this.physical_attraction_groupBox.Size = new System.Drawing.Size(245, 146);
             this.physical_attraction_groupBox.TabIndex = 10;
@@ -689,7 +708,7 @@ namespace project_zeta
             this.political_ideolody_groupBox.Controls.Add(this.liberal);
             this.political_ideolody_groupBox.Controls.Add(this.moderate);
             this.political_ideolody_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.political_ideolody_groupBox.Location = new System.Drawing.Point(444, 37);
+            this.political_ideolody_groupBox.Location = new System.Drawing.Point(444, 156);
             this.political_ideolody_groupBox.Name = "political_ideolody_groupBox";
             this.political_ideolody_groupBox.Size = new System.Drawing.Size(184, 169);
             this.political_ideolody_groupBox.TabIndex = 9;
@@ -751,7 +770,7 @@ namespace project_zeta
             this.coming_out.Controls.Add(this.severe_restrictions);
             this.coming_out.Controls.Add(this.open);
             this.coming_out.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.coming_out.Location = new System.Drawing.Point(444, 212);
+            this.coming_out.Location = new System.Drawing.Point(444, 331);
             this.coming_out.Name = "coming_out";
             this.coming_out.Size = new System.Drawing.Size(261, 118);
             this.coming_out.TabIndex = 10;
@@ -801,7 +820,7 @@ namespace project_zeta
             this.sexual_position.Controls.Add(this.bottom);
             this.sexual_position.Controls.Add(this.versatile);
             this.sexual_position.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sexual_position.Location = new System.Drawing.Point(445, 337);
+            this.sexual_position.Location = new System.Drawing.Point(445, 456);
             this.sexual_position.Name = "sexual_position";
             this.sexual_position.Size = new System.Drawing.Size(261, 116);
             this.sexual_position.TabIndex = 11;
@@ -851,7 +870,7 @@ namespace project_zeta
             this.location_groupBox.Controls.Add(this.wants_you_to_live_with);
             this.location_groupBox.Controls.Add(this.live_with_you);
             this.location_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.location_groupBox.Location = new System.Drawing.Point(635, 38);
+            this.location_groupBox.Location = new System.Drawing.Point(635, 157);
             this.location_groupBox.Name = "location_groupBox";
             this.location_groupBox.Size = new System.Drawing.Size(261, 169);
             this.location_groupBox.TabIndex = 12;
@@ -900,7 +919,7 @@ namespace project_zeta
             this.languages_groupBox.Controls.Add(this.no_language);
             this.languages_groupBox.Controls.Add(this.more_than_one);
             this.languages_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.languages_groupBox.Location = new System.Drawing.Point(712, 213);
+            this.languages_groupBox.Location = new System.Drawing.Point(712, 332);
             this.languages_groupBox.Name = "languages_groupBox";
             this.languages_groupBox.Size = new System.Drawing.Size(184, 118);
             this.languages_groupBox.TabIndex = 13;
@@ -937,7 +956,7 @@ namespace project_zeta
             this.international_travelling_groupBox.Controls.Add(this.not_interested_travelling);
             this.international_travelling_groupBox.Controls.Add(this.interested_in_travelling);
             this.international_travelling_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.international_travelling_groupBox.Location = new System.Drawing.Point(445, 459);
+            this.international_travelling_groupBox.Location = new System.Drawing.Point(445, 578);
             this.international_travelling_groupBox.Name = "international_travelling_groupBox";
             this.international_travelling_groupBox.Size = new System.Drawing.Size(261, 109);
             this.international_travelling_groupBox.TabIndex = 14;
@@ -972,7 +991,7 @@ namespace project_zeta
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(582, 576);
+            this.label1.Location = new System.Drawing.Point(582, 695);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(355, 23);
             this.label1.TabIndex = 15;
@@ -982,7 +1001,7 @@ namespace project_zeta
             // 
             this.honest.AutoSize = true;
             this.honest.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.honest.Location = new System.Drawing.Point(954, 573);
+            this.honest.Location = new System.Drawing.Point(954, 692);
             this.honest.Name = "honest";
             this.honest.Size = new System.Drawing.Size(50, 27);
             this.honest.TabIndex = 4;
@@ -994,7 +1013,7 @@ namespace project_zeta
             // 
             this.dishonest.AutoSize = true;
             this.dishonest.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dishonest.Location = new System.Drawing.Point(1010, 573);
+            this.dishonest.Location = new System.Drawing.Point(1010, 692);
             this.dishonest.Name = "dishonest";
             this.dishonest.Size = new System.Drawing.Size(46, 27);
             this.dishonest.TabIndex = 16;
@@ -1015,7 +1034,7 @@ namespace project_zeta
             this.health_groupBox.Controls.Add(this.claims_to_be_healthy);
             this.health_groupBox.Controls.Add(this.healthy);
             this.health_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.health_groupBox.Location = new System.Drawing.Point(902, 38);
+            this.health_groupBox.Location = new System.Drawing.Point(902, 157);
             this.health_groupBox.Name = "health_groupBox";
             this.health_groupBox.Size = new System.Drawing.Size(320, 229);
             this.health_groupBox.TabIndex = 13;
@@ -1132,7 +1151,7 @@ namespace project_zeta
             this.groupBox1.Controls.Add(this.not_dangerous);
             this.groupBox1.Controls.Add(this.mentally_stable);
             this.groupBox1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(902, 273);
+            this.groupBox1.Location = new System.Drawing.Point(902, 392);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(320, 209);
             this.groupBox1.TabIndex = 22;
@@ -1232,7 +1251,7 @@ namespace project_zeta
             this.smoking_group.Controls.Add(this.cigarettes);
             this.smoking_group.Controls.Add(this.no_smoking);
             this.smoking_group.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.smoking_group.Location = new System.Drawing.Point(712, 337);
+            this.smoking_group.Location = new System.Drawing.Point(712, 456);
             this.smoking_group.Name = "smoking_group";
             this.smoking_group.Size = new System.Drawing.Size(184, 116);
             this.smoking_group.TabIndex = 14;
@@ -1282,7 +1301,7 @@ namespace project_zeta
             this.alcohol_groupBox.Controls.Add(this.frequent);
             this.alcohol_groupBox.Controls.Add(this.socialising);
             this.alcohol_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alcohol_groupBox.Location = new System.Drawing.Point(711, 458);
+            this.alcohol_groupBox.Location = new System.Drawing.Point(711, 577);
             this.alcohol_groupBox.Name = "alcohol_groupBox";
             this.alcohol_groupBox.Size = new System.Drawing.Size(184, 109);
             this.alcohol_groupBox.TabIndex = 15;
@@ -1332,12 +1351,12 @@ namespace project_zeta
             this.religion_groupBox.Controls.Add(this.no_practice);
             this.religion_groupBox.Controls.Add(this.irelligious);
             this.religion_groupBox.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.religion_groupBox.Location = new System.Drawing.Point(901, 489);
+            this.religion_groupBox.Location = new System.Drawing.Point(901, 608);
             this.religion_groupBox.Name = "religion_groupBox";
             this.religion_groupBox.Size = new System.Drawing.Size(320, 74);
             this.religion_groupBox.TabIndex = 16;
             this.religion_groupBox.TabStop = false;
-            this.religion_groupBox.Text = "Religion";
+            this.religion_groupBox.Text = "Religious Practice";
             // 
             // religious
             // 
@@ -1381,7 +1400,7 @@ namespace project_zeta
             this.check_eligibility_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.check_eligibility_button.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.check_eligibility_button.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.check_eligibility_button.Location = new System.Drawing.Point(400, 618);
+            this.check_eligibility_button.Location = new System.Drawing.Point(400, 737);
             this.check_eligibility_button.Name = "check_eligibility_button";
             this.check_eligibility_button.Size = new System.Drawing.Size(425, 59);
             this.check_eligibility_button.TabIndex = 23;
@@ -1393,6 +1412,7 @@ namespace project_zeta
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
+            this.toolStripSeparator1,
             this.about});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -1400,31 +1420,25 @@ namespace project_zeta
             this.toolStrip1.TabIndex = 66;
             this.toolStrip1.Text = "Match Sensitivity";
             // 
-            // about
-            // 
-            this.about.Name = "about";
-            this.about.Size = new System.Drawing.Size(40, 22);
-            this.about.Text = "About";
-            this.about.Click += new System.EventHandler(this.about_Click);
-            // 
             // toolStripButton1
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exactMatchToolStripMenuItem,
             this.perfectMatchToolStripMenuItem,
             this.stillPossibleToolStripMenuItem,
             this.tossupToolStripMenuItem,
             this.smallChanceToolStripMenuItem});
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.Image = global::project_zeta.Properties.Resources.senstivity;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(110, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(126, 22);
             this.toolStripButton1.Text = "Match Sensitivity";
             this.toolStripButton1.ToolTipText = "Change criterias for your date";
             // 
             // exactMatchToolStripMenuItem
             // 
+            this.exactMatchToolStripMenuItem.Checked = true;
+            this.exactMatchToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.exactMatchToolStripMenuItem.Name = "exactMatchToolStripMenuItem";
             this.exactMatchToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.exactMatchToolStripMenuItem.Text = "Exact Match";
@@ -1458,11 +1472,237 @@ namespace project_zeta
             this.smallChanceToolStripMenuItem.Text = "Small Chance";
             this.smallChanceToolStripMenuItem.Click += new System.EventHandler(this.smallChanceToolStripMenuItem_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // about
+            // 
+            this.about.Image = global::project_zeta.Properties.Resources.info;
+            this.about.Name = "about";
+            this.about.Size = new System.Drawing.Size(56, 22);
+            this.about.Text = "About";
+            this.about.Click += new System.EventHandler(this.about_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Info;
+            this.groupBox2.Controls.Add(this.religion);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.sexual_orientation);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.gender);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.ethnicity);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.name);
+            this.groupBox2.Controls.Add(this.pronouns);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.surname);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.groupBox2.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(212, 28);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1009, 118);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Personal Info";
+            // 
+            // religion
+            // 
+            this.religion.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.religion.FormattingEnabled = true;
+            this.religion.Items.AddRange(new object[] {
+            "Agnostic ",
+            "Deist",
+            "Atheist ",
+            "Christian",
+            "Jew",
+            "Muslim",
+            "Hindu",
+            "Buddhist",
+            "Others"});
+            this.religion.Location = new System.Drawing.Point(641, 70);
+            this.religion.Name = "religion";
+            this.religion.Size = new System.Drawing.Size(116, 25);
+            this.religion.TabIndex = 96;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(556, 67);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(81, 28);
+            this.label18.TabIndex = 95;
+            this.label18.Text = "Religion:";
+            // 
+            // sexual_orientation
+            // 
+            this.sexual_orientation.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sexual_orientation.FormattingEnabled = true;
+            this.sexual_orientation.Items.AddRange(new object[] {
+            "Straight (Cis and Trans Woman)",
+            "Bisexual",
+            "Gay ",
+            "Other"});
+            this.sexual_orientation.Location = new System.Drawing.Point(805, 35);
+            this.sexual_orientation.Name = "sexual_orientation";
+            this.sexual_orientation.Size = new System.Drawing.Size(175, 25);
+            this.sexual_orientation.TabIndex = 94;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(630, 32);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(169, 28);
+            this.label17.TabIndex = 93;
+            this.label17.Text = "Sexual Orientation:";
+            // 
+            // gender
+            // 
+            this.gender.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.FormattingEnabled = true;
+            this.gender.Items.AddRange(new object[] {
+            "Cis Woman",
+            "Cis Man",
+            "Trans Woman",
+            "Non-Binary",
+            "Other"});
+            this.gender.Location = new System.Drawing.Point(857, 70);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(100, 25);
+            this.gender.TabIndex = 92;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(776, 67);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(75, 28);
+            this.label16.TabIndex = 91;
+            this.label16.Text = "Gender:";
+            // 
+            // ethnicity
+            // 
+            this.ethnicity.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ethnicity.FormattingEnabled = true;
+            this.ethnicity.Items.AddRange(new object[] {
+            "European (Ex. English, German, Italian)",
+            "Turkish ",
+            "Iranian",
+            "Middle Eastern Minority (Ex. Kurds, Assyrians)",
+            "Latino (Ex. Venezuelan, Brazilian)",
+            "Hispanic (Ex. Mexican, Salvadorean)",
+            "Asian (Ex. Chinese, Korean, Japanese)",
+            "Pacific Islander (Ex. Hawaii)",
+            "Indian",
+            "Southeast Asian (Ex.Pakistani, Bengladeshi)",
+            "Native American ",
+            "Central Asian or Turkic",
+            "Arab",
+            "African",
+            "Other",
+            "Mixed"});
+            this.ethnicity.Location = new System.Drawing.Point(368, 35);
+            this.ethnicity.Name = "ethnicity";
+            this.ethnicity.Size = new System.Drawing.Size(239, 25);
+            this.ethnicity.TabIndex = 90;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(272, 32);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(92, 28);
+            this.label15.TabIndex = 89;
+            this.label15.Text = "Ethnicity:";
+            // 
+            // name
+            // 
+            this.name.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Location = new System.Drawing.Point(88, 35);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(167, 25);
+            this.name.TabIndex = 88;
+            // 
+            // pronouns
+            // 
+            this.pronouns.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pronouns.FormattingEnabled = true;
+            this.pronouns.Items.AddRange(new object[] {
+            "He/Him",
+            "She/Her",
+            "They/Them",
+            "He/They",
+            "She/They",
+            "Other"});
+            this.pronouns.Location = new System.Drawing.Point(420, 70);
+            this.pronouns.Name = "pronouns";
+            this.pronouns.Size = new System.Drawing.Size(116, 25);
+            this.pronouns.TabIndex = 87;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(324, 67);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(93, 28);
+            this.label14.TabIndex = 86;
+            this.label14.Text = "Pronouns:";
+            // 
+            // surname
+            // 
+            this.surname.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.surname.Location = new System.Drawing.Point(140, 73);
+            this.surname.Name = "surname";
+            this.surname.Size = new System.Drawing.Size(167, 25);
+            this.surname.TabIndex = 85;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(48, 70);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(89, 28);
+            this.label13.TabIndex = 84;
+            this.label13.Text = "Surname:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(22, 32);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(63, 28);
+            this.label12.TabIndex = 83;
+            this.label12.Text = "Name:";
+            // 
+            // user_profile_pic
+            // 
+            this.user_profile_pic.BackgroundImage = global::project_zeta.Properties.Resources.user;
+            this.user_profile_pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.user_profile_pic.Location = new System.Drawing.Point(45, 32);
+            this.user_profile_pic.Name = "user_profile_pic";
+            this.user_profile_pic.Size = new System.Drawing.Size(132, 118);
+            this.user_profile_pic.TabIndex = 67;
+            this.user_profile_pic.TabStop = false;
+            this.user_profile_pic.Click += new System.EventHandler(this.pictureBox18_Click);
+            // 
             // pictureBox13
             // 
             this.pictureBox13.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox13.Location = new System.Drawing.Point(1193, 639);
+            this.pictureBox13.Location = new System.Drawing.Point(1193, 758);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(21, 17);
             this.pictureBox13.TabIndex = 65;
@@ -1472,7 +1712,7 @@ namespace project_zeta
             // 
             this.pictureBox36.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox36.Location = new System.Drawing.Point(1144, 639);
+            this.pictureBox36.Location = new System.Drawing.Point(1144, 758);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(21, 17);
             this.pictureBox36.TabIndex = 64;
@@ -1482,7 +1722,7 @@ namespace project_zeta
             // 
             this.pictureBox37.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox37.Location = new System.Drawing.Point(1096, 639);
+            this.pictureBox37.Location = new System.Drawing.Point(1096, 758);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(21, 17);
             this.pictureBox37.TabIndex = 63;
@@ -1492,7 +1732,7 @@ namespace project_zeta
             // 
             this.pictureBox38.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox38.Location = new System.Drawing.Point(1057, 639);
+            this.pictureBox38.Location = new System.Drawing.Point(1057, 758);
             this.pictureBox38.Name = "pictureBox38";
             this.pictureBox38.Size = new System.Drawing.Size(21, 17);
             this.pictureBox38.TabIndex = 62;
@@ -1502,7 +1742,7 @@ namespace project_zeta
             // 
             this.pictureBox39.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox39.Location = new System.Drawing.Point(1009, 639);
+            this.pictureBox39.Location = new System.Drawing.Point(1009, 758);
             this.pictureBox39.Name = "pictureBox39";
             this.pictureBox39.Size = new System.Drawing.Size(21, 17);
             this.pictureBox39.TabIndex = 61;
@@ -1512,7 +1752,7 @@ namespace project_zeta
             // 
             this.pictureBox32.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox32.Location = new System.Drawing.Point(960, 639);
+            this.pictureBox32.Location = new System.Drawing.Point(960, 758);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(21, 17);
             this.pictureBox32.TabIndex = 60;
@@ -1522,7 +1762,7 @@ namespace project_zeta
             // 
             this.pictureBox34.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox34.Location = new System.Drawing.Point(912, 639);
+            this.pictureBox34.Location = new System.Drawing.Point(912, 758);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(21, 17);
             this.pictureBox34.TabIndex = 59;
@@ -1532,7 +1772,7 @@ namespace project_zeta
             // 
             this.pictureBox33.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox33.Location = new System.Drawing.Point(1181, 662);
+            this.pictureBox33.Location = new System.Drawing.Point(1181, 781);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(21, 17);
             this.pictureBox33.TabIndex = 58;
@@ -1542,7 +1782,7 @@ namespace project_zeta
             // 
             this.pictureBox35.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox35.Location = new System.Drawing.Point(1181, 619);
+            this.pictureBox35.Location = new System.Drawing.Point(1181, 738);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(21, 17);
             this.pictureBox35.TabIndex = 56;
@@ -1552,7 +1792,7 @@ namespace project_zeta
             // 
             this.pictureBox26.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox26.Location = new System.Drawing.Point(1145, 662);
+            this.pictureBox26.Location = new System.Drawing.Point(1145, 781);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(21, 17);
             this.pictureBox26.TabIndex = 55;
@@ -1562,7 +1802,7 @@ namespace project_zeta
             // 
             this.pictureBox27.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox27.Location = new System.Drawing.Point(1055, 662);
+            this.pictureBox27.Location = new System.Drawing.Point(1055, 781);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(21, 17);
             this.pictureBox27.TabIndex = 54;
@@ -1572,7 +1812,7 @@ namespace project_zeta
             // 
             this.pictureBox28.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox28.Location = new System.Drawing.Point(1099, 660);
+            this.pictureBox28.Location = new System.Drawing.Point(1099, 779);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(21, 17);
             this.pictureBox28.TabIndex = 53;
@@ -1582,7 +1822,7 @@ namespace project_zeta
             // 
             this.pictureBox29.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox29.Location = new System.Drawing.Point(1145, 618);
+            this.pictureBox29.Location = new System.Drawing.Point(1145, 737);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(21, 17);
             this.pictureBox29.TabIndex = 52;
@@ -1592,7 +1832,7 @@ namespace project_zeta
             // 
             this.pictureBox30.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox30.Location = new System.Drawing.Point(1099, 618);
+            this.pictureBox30.Location = new System.Drawing.Point(1099, 737);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(21, 17);
             this.pictureBox30.TabIndex = 51;
@@ -1602,7 +1842,7 @@ namespace project_zeta
             // 
             this.pictureBox31.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox31.Location = new System.Drawing.Point(1055, 618);
+            this.pictureBox31.Location = new System.Drawing.Point(1055, 737);
             this.pictureBox31.Name = "pictureBox31";
             this.pictureBox31.Size = new System.Drawing.Size(21, 17);
             this.pictureBox31.TabIndex = 50;
@@ -1612,7 +1852,7 @@ namespace project_zeta
             // 
             this.pictureBox20.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox20.Location = new System.Drawing.Point(1012, 662);
+            this.pictureBox20.Location = new System.Drawing.Point(1012, 781);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(21, 17);
             this.pictureBox20.TabIndex = 49;
@@ -1622,7 +1862,7 @@ namespace project_zeta
             // 
             this.pictureBox21.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox21.Location = new System.Drawing.Point(922, 662);
+            this.pictureBox21.Location = new System.Drawing.Point(922, 781);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(21, 17);
             this.pictureBox21.TabIndex = 48;
@@ -1632,7 +1872,7 @@ namespace project_zeta
             // 
             this.pictureBox22.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox22.Location = new System.Drawing.Point(966, 660);
+            this.pictureBox22.Location = new System.Drawing.Point(966, 779);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(21, 17);
             this.pictureBox22.TabIndex = 47;
@@ -1642,7 +1882,7 @@ namespace project_zeta
             // 
             this.pictureBox23.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox23.Location = new System.Drawing.Point(1012, 618);
+            this.pictureBox23.Location = new System.Drawing.Point(1012, 737);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(21, 17);
             this.pictureBox23.TabIndex = 46;
@@ -1652,7 +1892,7 @@ namespace project_zeta
             // 
             this.pictureBox24.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox24.Location = new System.Drawing.Point(966, 618);
+            this.pictureBox24.Location = new System.Drawing.Point(966, 737);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(21, 17);
             this.pictureBox24.TabIndex = 45;
@@ -1662,7 +1902,7 @@ namespace project_zeta
             // 
             this.pictureBox25.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox25.Location = new System.Drawing.Point(922, 618);
+            this.pictureBox25.Location = new System.Drawing.Point(922, 737);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(21, 17);
             this.pictureBox25.TabIndex = 44;
@@ -1672,7 +1912,7 @@ namespace project_zeta
             // 
             this.pictureBox12.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox12.Location = new System.Drawing.Point(884, 662);
+            this.pictureBox12.Location = new System.Drawing.Point(884, 781);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(21, 17);
             this.pictureBox12.TabIndex = 43;
@@ -1682,7 +1922,7 @@ namespace project_zeta
             // 
             this.pictureBox14.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox14.Location = new System.Drawing.Point(838, 660);
+            this.pictureBox14.Location = new System.Drawing.Point(838, 779);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(21, 17);
             this.pictureBox14.TabIndex = 41;
@@ -1692,7 +1932,7 @@ namespace project_zeta
             // 
             this.pictureBox15.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox15.Location = new System.Drawing.Point(884, 618);
+            this.pictureBox15.Location = new System.Drawing.Point(884, 737);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(21, 17);
             this.pictureBox15.TabIndex = 40;
@@ -1702,7 +1942,7 @@ namespace project_zeta
             // 
             this.pictureBox16.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox16.Location = new System.Drawing.Point(873, 639);
+            this.pictureBox16.Location = new System.Drawing.Point(873, 758);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(21, 17);
             this.pictureBox16.TabIndex = 39;
@@ -1712,7 +1952,7 @@ namespace project_zeta
             // 
             this.pictureBox17.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox17.Location = new System.Drawing.Point(838, 618);
+            this.pictureBox17.Location = new System.Drawing.Point(838, 737);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(21, 17);
             this.pictureBox17.TabIndex = 38;
@@ -1722,7 +1962,7 @@ namespace project_zeta
             // 
             this.pictureBox10.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(363, 662);
+            this.pictureBox10.Location = new System.Drawing.Point(363, 781);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(21, 17);
             this.pictureBox10.TabIndex = 35;
@@ -1732,7 +1972,7 @@ namespace project_zeta
             // 
             this.pictureBox11.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Location = new System.Drawing.Point(273, 662);
+            this.pictureBox11.Location = new System.Drawing.Point(273, 781);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(21, 17);
             this.pictureBox11.TabIndex = 34;
@@ -1742,7 +1982,7 @@ namespace project_zeta
             // 
             this.pictureBox9.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(317, 660);
+            this.pictureBox9.Location = new System.Drawing.Point(317, 779);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(21, 17);
             this.pictureBox9.TabIndex = 33;
@@ -1752,7 +1992,7 @@ namespace project_zeta
             // 
             this.pictureBox7.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(363, 618);
+            this.pictureBox7.Location = new System.Drawing.Point(363, 737);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(21, 17);
             this.pictureBox7.TabIndex = 32;
@@ -1762,7 +2002,7 @@ namespace project_zeta
             // 
             this.pictureBox8.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(341, 639);
+            this.pictureBox8.Location = new System.Drawing.Point(341, 758);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(21, 17);
             this.pictureBox8.TabIndex = 31;
@@ -1772,7 +2012,7 @@ namespace project_zeta
             // 
             this.pictureBox6.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(317, 618);
+            this.pictureBox6.Location = new System.Drawing.Point(317, 737);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(21, 17);
             this.pictureBox6.TabIndex = 29;
@@ -1782,7 +2022,7 @@ namespace project_zeta
             // 
             this.pictureBox5.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(293, 639);
+            this.pictureBox5.Location = new System.Drawing.Point(293, 758);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(21, 17);
             this.pictureBox5.TabIndex = 28;
@@ -1792,7 +2032,7 @@ namespace project_zeta
             // 
             this.pictureBox4.BackgroundImage = global::project_zeta.Properties.Resources.heart;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(273, 618);
+            this.pictureBox4.Location = new System.Drawing.Point(273, 737);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(21, 17);
             this.pictureBox4.TabIndex = 27;
@@ -1802,7 +2042,7 @@ namespace project_zeta
             // 
             this.pictureBox3.BackgroundImage = global::project_zeta.Properties.Resources.lesbian_lovers;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(191, 618);
+            this.pictureBox3.Location = new System.Drawing.Point(191, 737);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(69, 67);
             this.pictureBox3.TabIndex = 26;
@@ -1812,7 +2052,7 @@ namespace project_zeta
             // 
             this.pictureBox2.BackgroundImage = global::project_zeta.Properties.Resources.hetero_lovers;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(107, 618);
+            this.pictureBox2.Location = new System.Drawing.Point(107, 737);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(69, 67);
             this.pictureBox2.TabIndex = 25;
@@ -1822,7 +2062,7 @@ namespace project_zeta
             // 
             this.pictureBox1.BackgroundImage = global::project_zeta.Properties.Resources.gay_lovers;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 618);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 737);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(81, 67);
             this.pictureBox1.TabIndex = 24;
@@ -1834,7 +2074,9 @@ namespace project_zeta
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1234, 694);
+            this.ClientSize = new System.Drawing.Size(1234, 816);
+            this.Controls.Add(this.user_profile_pic);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox36);
@@ -1942,6 +2184,9 @@ namespace project_zeta
             this.religion_groupBox.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user_profile_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
@@ -2125,6 +2370,23 @@ namespace project_zeta
         private System.Windows.Forms.ToolStripMenuItem tossupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem smallChanceToolStripMenuItem;
         private System.Windows.Forms.ToolStripLabel about;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox religion;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox sexual_orientation;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox gender;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox ethnicity;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.ComboBox pronouns;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox surname;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox user_profile_pic;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

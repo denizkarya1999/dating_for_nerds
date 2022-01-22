@@ -1,0 +1,124 @@
+Relationship Eligibility Checker
+#################################################
+Common Eligibility Points: 
+
+Balanced Personality +10
+Nerd Personality +5
+Amateur Personality 0
+Alpha Personality -5
+Bitchy Personality -10
+
+Studies at a top university +10
+Studies at a university +8
+Studies at community college but planning to transfer +5
+Studies in community college, working without diploma, school drop-out 0
+
+Has at least two college graduate family members with STEM degrees +10
+Has at least two college graduate family members +8
+Has one college graduate family member +5
+Has no college graduate family member 0
+
+Has a car +10
+Does not have a car 0
+
+Loves making all types of discussions, open to questions and looks for common interests +10
+Loves certain discussions but looks for physical and emotional bonds +7
+Only wants chemicals and emotions to match +5
+Not interested in anything uses as a backup plan !Rejection
+
+Responds texts in a stable time or gives a valid explanation for late response +10
+Was responding texts then slowed down the communication +5
+Ghosted you and said hello again +3
+Ghosted you without any notice !Rejection
+
+Almost 80% of common interests match (such as music, movie and political opinions) +10
+Certain common interests match +7
+There is small common interest +5
+No common interest 0
+
+Physically attractive +10
+Physically somewhat attractive +8
+Not physically attractive !Friend Zone or Rejection
+
+Moderate +10
+Liberal +8
+Conservative +5
+Apolitical 0
+
+Open to his family or plans to come out to his family / Cis Woman +10
+Family restricted coming out and plans to strike !Rejection
+Never plans to come out to family !Rejection
+
+Versatile +10
+Bottom +5
+Top !Rejection
+
+Wants to live with you +10
+Wants you to live with him +7
+Wants to split !Rejection
+
+Knows two or more foreign languages +10
+Knows no foreign language 0
+
+Interested in travelling or travelled to countries +10
+Not interested in travelling 0
+
+Irreligious +10
+No practice 5
+Religious 0
+
+
+Proved his honesty +10
+Failed to prove his honesty !Rejection and Sanctions
+
+*************************************************************************
+Health and Safety Eligibility Points:
+
+!Sexually Transmitted Diseases are considered chronic communicable disease and some may not be cured.
+!Autism Spectrum Syndrome considered as a potentially dangerous mental health problem to public (situation will be considered)
+
+Does not have acute or chronic communicable diseases (proved it with documentation) +Apply STD Prevention Act of 2021 +10
+Does not have chronic communicable diseases (proved it with documentation) but experiencing acute communicable disease +Wait
+Does not have acute or chronic communicable diseases (claims to be) +Slow down
+Does have chronic communicable disease !Rejection
+
+Does not have a mental health problem that posses danger to public and does not take any psychiatry drug +Safe +10
+Does not have a mental health problem that posses danger to public but does take any psychiatry drug +Take precautions 0
+Does have a mental health problem that posses danger to pulic !Rejection and Cut the communication
+
+*************************************************************************
+Smoking and Alcohol:
+
+No Smoking +10
+Cigarettes !Rejection
+Marijuana !Rejection
+
+Socialising +10
+No Alcohol +5
+Frequent -5
+
+
+*************************************************************************
+Total Points: 200
+
+Exact Match: 200 %100
+Perfect Match: 160 %80
+Still Possible: 120 %60
+Toss-Up: 100 %50
+Small Chance: %25
+No Chance: %0
+
+! Set values yourself
+
+**************************************************************************
+Algorithm Notes:
+
+10 Point Category:
+Average
+Top University
+Moderate
+Wants to live with you
+
+
+
+
